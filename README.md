@@ -2,7 +2,7 @@
 
 Welcome to the **Wedding Website Template** project! This template is designed for couples who want a simple, elegant, and free-to-launch wedding website without the hassle of complicated setups or expensive fees.
 
-[]
+![Website Demo](/public/images/readme/hero.png)
 
 ## Why Use This Template?
 
@@ -13,6 +13,8 @@ Planning a wedding can be stressful, but setting up your wedding website doesnâ€
 - **Modern Design**: Impress your guests with a clean, modern, and responsive design that looks great on all devices.
 - **Customizable Features**: Easily add and manage your guest list, share your wedding schedule, and more with built-in integrations for Airtable and Fillout forms.
 
+![Countdown](/public/images/readme/countdown.png)
+
 ## Features
 
 - **RSVP Management**: Allow guests to RSVP directly through your site with a seamless Airtable integration.
@@ -20,6 +22,8 @@ Planning a wedding can be stressful, but setting up your wedding website doesnâ€
 - **Interactive Maps**: Help your guests find their way with integrated Google Maps.
 - **Password Protection**: Keep your website semi-private with an optional password protection feature.
 - **Mobile-Friendly**: Ensure your website looks great on smartphones, tablets, and desktops.
+
+![Gift Register](/public/images/readme/gifts.png)
 
 ## Getting Started
 
