@@ -121,12 +121,9 @@ Before you begin, ensure you have the following installed on your machine:
    You can find the files [here](./src/config/).
 
    You will need to edit the following files:
-
-   -**[Admin Config](./src/config/admin.config.ts)**
-
-   -**[Colour/Theme Config](./src/config/colour.config.ts)**
-   
-   -**[Wedding Config](./src/config/wedding.config.ts)**
+   - **[Admin Config](./src/config/admin.config.ts)**
+   - **[Colour/Theme Config](./src/config/colour.config.ts)**
+   - **[Wedding Config](./src/config/wedding.config.ts)**
 
    ```
    const weddingConfig: WeddingConfigType = {
@@ -332,9 +329,7 @@ This guide will help you set up a Fillout form by importing a JSON configuration
 
 ### Connecting the Form to Airtable
 
-1. **Add Airt
-
-able Integration**
+1. **Add Airtable Integration**
 
    - In the Fillout form editor, find the **"Integrations"** tab, usually located in the settings menu.
    - Click on **"Add Integration"** and choose **Airtable** from the list of available integrations.
