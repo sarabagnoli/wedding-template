@@ -121,11 +121,12 @@ Before you begin, ensure you have the following installed on your machine:
    You can find the files [here](./src/config/).
 
    You will need to edit the following files:
+   
    -**[Admin Config](./src/config/admin.config.ts)**
    -**[Colour/Theme Config](./src/config/colour.config.ts)**
    -**[Wedding Config](./src/config/wedding.config.ts)**
 
-   ```json
+   ```
    const weddingConfig: WeddingConfigType = {
        people: {
            bride: { firstName: 'Jane', lastName: 'Doe' },
