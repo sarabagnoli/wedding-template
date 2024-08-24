@@ -2,6 +2,7 @@ import { Gift, GiftStatus } from "@/interfaces/gifts";
 import Airtable, { Attachment } from "airtable";
 
 export const submitGiftToAirtable = async (gift: Gift, email: string): Promise<string | void> => {
+  if (process.env.NEXT_PUBLIC_AIRTABLE_DISABLED) return
   const base = new Airtable({ apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE || '')
 
   let userID: string
@@ -35,6 +36,7 @@ export const submitGiftToAirtable = async (gift: Gift, email: string): Promise<s
 }
 
 export const getGiftsFromAirtable = async (): Promise<Gift[]> => {
+  if (process.env.NEXT_PUBLIC_AIRTABLE_DISABLED) return []
   const base = new Airtable({ apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE || '')
 
   return new Promise<Gift[]>((resolve, reject) => {
@@ -76,6 +78,8 @@ export const getGiftsFromAirtable = async (): Promise<Gift[]> => {
 }
 
 const getUserIDByEmail = async (email: string): Promise<string> => {
+  if (process.env.NEXT_PUBLIC_AIRTABLE_DISABLED) return ''
+
   const base = new Airtable({ apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE || '')
 
   return new Promise<string>((resolve, reject) => {
