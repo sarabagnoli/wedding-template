@@ -2,6 +2,8 @@
 
 Welcome to the **Wedding Website Template** project! This template is designed for couples who want a simple, elegant, and free-to-launch wedding website without the hassle of complicated setups or expensive fees.
 
+[]
+
 ## Why Use This Template?
 
 Planning a wedding can be stressful, but setting up your wedding website doesn’t have to be. This template offers:

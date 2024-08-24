@@ -38,13 +38,13 @@ export const submitGiftToAirtable = async (gift: Gift, email: string): Promise<s
 export const getGiftsFromAirtable = async (): Promise<Gift[]> => {
   if (process.env.NEXT_PUBLIC_AIRTABLE_DISABLED) return [
     {
-      id: '0',
+      id: '1',
       name: 'Toaster',
       description: "A nice toaster that shows the demo",
       cost: 19.98,
-      picture: "https://pngimg.com/uploads/toaster/toaster_PNG2.png",
-      link: "https://pngimg.com/image/46594",
-      status: GiftStatus.Claimed
+      picture: "https://www.kitchenaid.ca/is/image/content/dam/global/kitchenaid/countertop-appliance/toaster/images/hero-KMT2115SX.tif?$PRODUCT-FEATURE$&fmt=webp-alpha",
+      link: "https://www.kitchenaid.ca/en_ca/countertop-appliances/toasters/two-slice/p.2-slice-toaster-with-manual-lift-lever.kmt2115sx.html",
+      status: GiftStatus.NotClaimed
     }
   ]
 
