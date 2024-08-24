@@ -36,7 +36,18 @@ export const submitGiftToAirtable = async (gift: Gift, email: string): Promise<s
 }
 
 export const getGiftsFromAirtable = async (): Promise<Gift[]> => {
-  if (process.env.NEXT_PUBLIC_AIRTABLE_DISABLED) return []
+  if (process.env.NEXT_PUBLIC_AIRTABLE_DISABLED) return [
+    {
+      id: '0',
+      name: 'Toaster',
+      description: "A nice toaster that shows the demo",
+      cost: 19.98,
+      picture: "https://pngimg.com/uploads/toaster/toaster_PNG2.png",
+      link: "https://pngimg.com/image/46594",
+      status: GiftStatus.Claimed
+    }
+  ]
+
   const base = new Airtable({ apiKey: process.env.NEXT_PUBLIC_AIRTABLE_TOKEN }).base(process.env.NEXT_PUBLIC_AIRTABLE_BASE || '')
 
   return new Promise<Gift[]>((resolve, reject) => {
